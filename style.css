@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-size: 2rem;
+}
+
+#container {
+    width: 80%;
+    margin: 3rem auto auto;
+}
+
+#div1, #div2 {
+    padding: 3rem;
+    display: inline-block;
+    margin-right: 2rem;
+    width: 40%;
+}
+
+#div1 {
+    background-color: orangered;
+}
+
+#div2 {
+    background-color: indianred;
+}
+
+
+/*Pour les ecrants qui vont jusqua 700 pixel de large*/
+@media screen and (max-width: 700px) {
+    #hide {
+        color: white;
+        display: block;
+        background-color: burlywood;
+    }
+}
+
+/*Pour les ecrants qui vont jusqua 400 pixel de large*/
+@media screen and (max-width: 400px){
+    #container {
+        margin: 0;
+        width: 100%;
+    }
+    #div1 , #div2 {
+        width: 100%;
+        display: block;
+    }
+    #hide {
+        display: none;
+    }
+}
